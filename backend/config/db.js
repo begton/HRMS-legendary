@@ -10,4 +10,15 @@ const pool = mysql.createPool({
   connectionLimit: 10,
 });
 
-module.exports = pool.promise();
+const promisePool = pool.promise();
+
+promisePool.getConnection()
+  .then(connection => {
+    console.log(' MySQL connected to HRMS database.');
+    connection.release();
+  })
+  .catch(error => {
+    console.error(' MySQL connection failed:', error.message || error);
+  });
+
+module.exports = promisePool;
