@@ -95,7 +95,7 @@ INSERT INTO Employee (EmpFirstName, EmpLastName, EmpGender, EmpDateOfBirth, EmpE
 -- and replace the hash below if needed.
 -- ----------------------------
 INSERT INTO Users (UserName, Password, EmpID) VALUES
-    ('admin', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lh7y', 1);
+    ('admin', '$2b$10$M/ryM23dcVjizZVQezOZsOhU.64Q.uskkoddp1qlRweDqAx3wr6hO', 1);
 
 -- ----------------------------
 -- Useful Views (optional but handy)
